@@ -1,0 +1,46 @@
+.body-container{
+    .data-table-container{
+        margin: 30px 30px 30px 30px;
+        max-height: max-content;
+        width: 100%;
+        border-radius: 15px;
+        border: 1px solid #D5D5D5;
+        .table{
+            vertical-align: middle;
+            th, td{
+                padding: 50px 30px;
+                font-size: 14px;
+                color: #202224;
+            }
+            td{
+                font-weight: 500;
+            }
+            thead{
+                th{
+                    background-color: #FCFDFD;
+                    font-size: 14px;
+                    font-weight: bolder;
+                    text-transform: uppercase;
+                }
+            }
+            p{
+                padding: 20px;
+                text-align: center;
+                border-radius: 5px;
+            }
+        }
+    }
+    
+    .completed{
+        background-color: #ccf0eb;
+        color: #00B69B;
+    }
+    .processing{
+        background-color: #e0d4fc;
+        color: #6226EF;
+    }
+    .rejected{
+        background-color: #fcd7d4;
+        color: #EF3826;
+    }
+}

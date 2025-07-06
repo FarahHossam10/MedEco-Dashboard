@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/sideMenu.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    <!-- Dashboard Page -->
+    <!-- Side Menu -->
+    <div class="menuBtn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M2 3.75A.75.75 0 0 1 2.75 3h10.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 3.75M2 8a.75.75 0 0 1 .75-.75h10.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 8m0 4.25a.75.75 0 0 1 .75-.75h10.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75"/>
+        </svg>
+    </div>
+    
+    <div class="layout">
+        <div class="sideMenu-container" id="sideMenu-container">
+            <div class="logo-container">
+                <img src="images/Medeco horizontal.svg" alt="MedEco Logo">
+            </div>
+            <nav class="nav flex-column">
+                    <div class="nav-links">
+                        <a class="nav-link active" aria-current="page" href="#">
+                            <span class="ri--dashboard-3-line">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2m0 2a8 8 0 1 0 0 16a8 8 0 0 0 0-16m3.833 3.337a.596.596 0 0 1 .763.067a.59.59 0 0 1 .063.76q-3.27 4.569-3.598 4.897a1.5 1.5 0 0 1-2.122-2.122q.56-.56 4.894-3.602M17.5 11a1 1 0 1 1 0 2a1 1 0 0 1 0-2m-11 0a1 1 0 1 1 0 2a1 1 0 0 1 0-2m2.318-3.596a1 1 0 1 1-1.414 1.414a1 1 0 0 1 1.414-1.414M12 5.5a1 1 0 1 1 0 2a1 1 0 0 1 0-2"/>
+                            </svg></span>Dashboard</a>
+                        <a class="nav-link" href="expiredDrugs.html">
+                            <span class="branch-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill="currentColor" d="M5.5 7.959a3 3 0 1 0-1 0v4.082a3 3 0 1 0 1 0zM5 7a2 2 0 1 1 0-4a2 2 0 0 1 0 4m2 8a2 2 0 1 1-4 0a2 2 0 0 1 4 0m4.146-8.146a.5.5 0 0 0 .708-.708L10.707 5H12.5A2.5 2.5 0 0 1 15 7.5V12a3 3 0 1 0 1 .17V7.5A3.5 3.5 0 0 0 12.5 4h-1.793l1.147-1.146a.5.5 0 0 0-.708-.708l-2 2a.5.5 0 0 0 0 .708zM17 15a2 2 0 1 1-4 0a2 2 0 0 1 4 0"/></svg></span>Expired Drugs</a>
+                        <a class="nav-link" href="request.html">
+                            <span class="cycle-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M22 12c0 6-4.39 10-9.806 10C7.792 22 4.24 19.665 3 16m-1-4C2 6 6.39 2 11.807 2C16.208 2 19.758 4.335 21 8"/><path d="m7 17l-4-1l-1 4M17 7l4 1l1-4"/></g></svg></span>Requests</a>
+                        <a class="nav-link" href="changePoints.html">
+                            <span class="money-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" fill-rule="evenodd" d="M11.5 14c2.49 0 4.5-1 4.5-2.5V2c0-1-2-2-4.5-2S7 1 7 2v3.5c1.17.49 2.17 1.31 2.88 2.35c.49.096 1.03.149 1.62.149c1.31 0 2.4-.261 3.18-.686a4 4 0 0 0 .323-.198v1.38c0 .235-.187.6-.802.936c-.596.325-1.51.564-2.7.564q-.357 0-.68-.027q.12.493.16 1.01q.253.014.52.014c1.31 0 2.4-.261 3.18-.686a4 4 0 0 0 .323-.198v1.38c0 .236-.149.586-.791.932c-.632.34-1.58.568-2.71.568q-.345 0-.668-.028a6.4 6.4 0 0 1-.309.974q.472.053.976.053zm2.7-7.56c.615-.336.802-.701.802-.936v-1.38q-.155.106-.323.198c-.778.425-1.87.686-3.18.686s-2.4-.261-3.18-.686a4 4 0 0 1-.323-.198v1.38c0 .235.187.6.802.935c.596.325 1.51.564 2.7.564s2.1-.239 2.7-.564zM8 2.5c0-.288.125-.565.358-.734c.127-.092.265-.184.374-.234c.273-.126 1.64-.533 2.77-.533s2.11.227 2.77.533c.124.057.261.146.382.234c.231.167.35.442.35.727v.006c0 .235-.187.6-.802.936c-.596.325-1.51.564-2.7.564s-2.1-.24-2.7-.564C8.187 3.1 8 2.734 8 2.5" clip-rule="evenodd"/><path fill="currentColor" fill-rule="evenodd" d="M9 11.5C9 13.99 6.99 16 4.5 16S0 13.99 0 11.5S2.01 7 4.5 7S9 9.01 9 11.5m-1 0C8 13.43 6.43 15 4.5 15S1 13.43 1 11.5S2.57 8 4.5 8S8 9.57 8 11.5" clip-rule="evenodd"/></svg></span>Change Points</a>
+                    </div>
+                    <div class="logout-btn-container">
+                        <a class="nav-link" href="signIn.html"><span class="logout-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7.023 5.5a9 9 0 1 0 9.953 0M12 2v8" color="currentColor"/></svg></span>Logout</a>   
+                    </div>
+            </nav>   
+        </div>
+        <div class="mainBody-container">
+            <div class="title-container">
+                <p>Hi, Doctor Mohamed</p>
+                <h1>Welcome Back!</h1>
+            </div>
+            <div class="insight-cards-container">
+                <div class="row row-cols-1 row-cols-md-4 g-2">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-title-container">
+                            <h5 class="card-title">Expired drug exchanges</h5>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M22.1 21.5L2.4 1.7L1.1 3L8 9.9l-3.9 3.9l2.1 2.1L3.1 19v2.8l4.5-4.5l2.1 2.1l3.9-3.9l7.2 7.2zm-10.9-6.3l-1.4 1.4L7 13.8l2.5-2.5l1.4 1.4l-1.1 1.1zm.7-6.5l-1.4-1.4L14 3.9L16.1 6l1.4-1.4l-1.4-1.4l1.4-1.4L21.8 6l-1.4 1.4L18.9 6l-1.4 1.4l2.1 2.1l-3.4 3.5l-2.8-2.8l.6-.7l1.4 1.4l1.4-1.4L14 6.7z"/></svg>
+                            </span>
+                        </div>
+                        <div class="card-value">43</div>
+                        <div class="card-stats">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"><path d="M9.5 3.5h4v4"/><path d="M13.5 3.5L7.85 9.15a.5.5 0 0 1-.7 0l-2.3-2.3a.5.5 0 0 0-.7 0L.5 10.5"/></g></svg>
+                                %8.5
+                            </span>
+                            Up from yesterday
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-title-container">
+                            <h5 class="card-title">Approval of the requests</h5>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><g fill="none"><path stroke="currentColor" stroke-linejoin="round" stroke-width="4" d="M5.615 22.585a3 3 0 0 1 0-4.242L18.343 5.615a3 3 0 0 1 4.243 0l19.799 19.799a3 3 0 0 1 0 4.242L29.657 42.384a3 3 0 0 1-4.243 0z"/><circle cx="14.808" cy="20.465" r="2" fill="currentColor" transform="rotate(-45 14.808 20.465)"/><circle cx="23.293" cy="28.949" r="2" fill="currentColor" transform="rotate(-45 23.293 28.95)"/><circle cx="19.05" cy="24.707" r="2" fill="currentColor" transform="rotate(-45 19.05 24.707)"/><circle cx="27.536" cy="33.193" r="2" fill="currentColor" transform="rotate(-45 27.536 33.193)"/><circle cx="20.464" cy="14.807" r="2" fill="currentColor" transform="rotate(-45 20.464 14.807)"/><circle cx="28.95" cy="23.293" r="2" fill="currentColor" transform="rotate(-45 28.95 23.293)"/><circle cx="24.707" cy="19.051" r="2" fill="currentColor" transform="rotate(-45 24.707 19.05)"/><circle cx="33.193" cy="27.535" r="2" fill="currentColor" transform="rotate(-45 33.193 27.535)"/></g></svg>
+                            </span>
+                        </div>
+                        <div class="card-value">12</div>
+                        <div class="card-stats">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"><path d="M9.5 3.5h4v4"/><path d="M13.5 3.5L7.85 9.15a.5.5 0 0 1-.7 0l-2.3-2.3a.5.5 0 0 0-.7 0L.5 10.5"/></g></svg>
+                                %25
+                            </span>
+                            Up from yesterday
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-title-container">
+                            <h5 class="card-title">How many points?</h5>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0-18 0"/><path d="M14.8 9A2 2 0 0 0 13 8h-2a2 2 0 1 0 0 4h2a2 2 0 1 1 0 4h-2a2 2 0 0 1-1.8-1M12 7v10"/></g></svg>
+                            </span>
+                        </div>
+                        <div class="card-value">80000 <span>point</span></div>
+                        <div class="card-stats">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"><path d="M9.5 3.5h4v4"/><path d="M13.5 3.5L7.85 9.15a.5.5 0 0 1-.7 0l-2.3-2.3a.5.5 0 0 0-.7 0L.5 10.5"/></g></svg>
+                                1000 point
+                            </span>
+                            Up from yesterday
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-title-container">
+                            <h5 class="card-title">How many times have you asked for medicine?</h5>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M16.2 3.5c-1-1-2.3-1.5-3.5-1.5s-2.6.5-3.5 1.5L3.4 9.1c-2 2-2 5.1 0 7.1s5.1 2 7.1 0l5.7-5.7c1.9-1.9 1.9-5.1 0-7m-1.4 5.6L12 11.9L8.4 8.4L4 12.8c0-.8.2-1.7.9-2.3l5.7-5.7c.5-.5 1.3-.8 2-.8s1.5.3 2.1.8c1.2 1.3 1.2 3.1.1 4.3m4.8-2c0 .8-.2 1.5-.4 2.3c1 1.2 1 3-.1 4.1l-2.8 2.8l-1.5-1.5l-2.8 2.8c-1.3 1.3-3.1 2-4.8 2c.2.3.4.6.7.9c2 2 5.1 2 7.1 0l5.7-5.7c2-2 2-5.1 0-7.1c-.5-.2-.8-.4-1.1-.6"/></svg>
+                            </span>
+                        </div>
+                        <div class="card-value">12</div>
+                        <div class="card-stats">
+                            <span style="color: #F93C65;">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"><path d="M9.5 10.5h4v-4"/><path d="M13.5 10.5L7.85 4.85a.5.5 0 0 0-.7 0l-2.3 2.3a.5.5 0 0 1-.7 0L.5 3.5"/></g></svg>
+                                %4.3
+                            </span>
+                            Down from yesterday
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="line-chart-container">
+                <h4>Expired Drug Exchange</h4>
+                <p><span>(+5) more</span> in 2021</p>
+                <canvas id="line-chart" style="width: 100%;"></canvas>
+            </div>
+            <div class="most-requested-cards-container">
+                    <div class="most-requested-card">
+                        <div class="card-title">Most requested types of medicine</div>
+                        <div class="canvas-container">
+                            <canvas id="type-doughnut-chart"></canvas>
+                            <div id="type-doughnut-summary" class="summary"></div>
+                        </div>
+                    </div>
+                    <div class="most-requested-card">
+                        <div class="card-title">Most requested medications</div>
+                        <div class="canvas-container">
+                            <canvas id="medicine-doughnut-chart"></canvas>
+                            <div id="medicine-doughnut-summary" class="summary"></div>
+                        </div>
+                    </div>
+            </div>
+    </div>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="js/home.js"></script>
+        <script src="js/menu.js"></script>
+    </div>
+</body>
+</html>

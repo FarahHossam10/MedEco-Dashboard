@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #F3F5F8;
+    font-family: "Nunito Sans";
+}
+.layout{
+    display: flex;
+    min-height: 100vh !important;
+    position: relative;
+}
+.sideMenu-container{
+    min-height: 150vh;
+    max-width: 20vw;
+    min-width: max-content;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 100px 0 60px 0;
+    .logo-container{
+        margin: 0 auto 50px auto;
+    }
+    svg{
+        width: 24px;
+        height: 24px;
+        color: #202224;
+        transition: color 0.3s ease;
+    }
+    span{
+        margin-right: 20px;
+    }
+    nav{
+        min-height: calc(100% - 50px);
+        min-width: max-content;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        a{
+            color: #202224 !important;
+            margin: 30px;
+            padding: 20px;
+            transition: all 0.2s;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .nav-links a{
+            background-color: transparent;
+            border-radius: 5px;
+            position: relative;
+            ::before{
+                content: "";
+                width: 0;
+                transition: all 0.2s;
+            }
+        }
+        .nav-links a:hover, .active{
+            background-color: #176B87 !important;
+            color: #fff !important;
+            svg{
+                color: #fff;
+            }
+            ::before{
+                content: "";
+                position: absolute;
+                top: 0;
+                left: -35px;
+                width: 10px;
+                height: 100%;
+                background-color: #176B87;
+                border-radius: 20px;
+            }
+        }
+    }
+}
+
+.menuBtn{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 55px;
+    height: 55px;
+    border-radius: 15px;
+    z-index: 99999;
+    display: none;
+    svg{
+        background-color: #fff;
+        border-radius: 5px;
+        width: 100%;
+        height: 100%;
+        path{
+            transform: scale(1.5);
+        }
+    }
+}
+
+@media(max-width: 900px){
+    .menuBtn{
+        display: block;
+    }
+    .sideMenu-container{
+        min-width: 0 !important;
+        max-width: 0 !important;
+        overflow: hidden;
+        z-index: 9999;
+        transition: all 0.2s ease;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        min-height: 100% !important;
+    }
+    .sideMenu-container.open {
+        min-width: max-content !important;
+        max-width: max-content !important;
+        overflow: visible;
+    }
+}
