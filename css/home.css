@@ -5,6 +5,8 @@
     box-sizing: border-box;
 }
 .mainBody-container{
+    flex: 1;           /* test */
+    min-width: 0;     /* test */
     padding: 60px 30px 30px 30px;
     max-width: 100vw;
     height: 100% !important;

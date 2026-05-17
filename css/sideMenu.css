@@ -11,6 +11,7 @@ body {
     display: flex;
     min-height: 100vh !important;
     position: relative;
+    overflow-x: hidden;  /* test */
 }
 .sideMenu-container{
     min-height: 150vh;
@@ -115,5 +116,13 @@ body {
         min-width: 250px !important;
         max-width: max-content !important;
         overflow: visible;
+    }
+
+    /* test */
+    .mainBody-container{
+        flex: 1;
+        width: 100%;
+        min-width: 0;
+        overflow-x: hidden;
     }
 }
