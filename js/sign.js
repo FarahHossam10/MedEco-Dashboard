@@ -9,14 +9,12 @@ document.addEventListener("DOMContentLoaded", function () {
         if (confirm) {
             passwordsMatch = password.value === confirm.value;
         }
-
-        // Prevent submission if form is invalid or passwords don't match
+        
         if (!form.checkValidity() || !passwordsMatch) {
             event.preventDefault();
             event.stopPropagation();
         }
 
-        // Show password mismatch error (Sign Up only)
         if (confirm) {
             if (!passwordsMatch) {
                 confirm.classList.add("is-invalid");

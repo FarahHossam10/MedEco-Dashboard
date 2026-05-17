@@ -53,7 +53,6 @@ function filterTable() {
   });
 }
 
-
 function resetFilter() {
   document.getElementById('date-from').value = "";
   document.getElementById('date-to').value = "";
@@ -63,8 +62,6 @@ function resetFilter() {
   document.getElementById("name").value = "";
   filterTable();
 }
-
-
 
 let dropdownFilters = document.querySelectorAll(".dropdown-filter");
 dropdownFilters.forEach(filter => {
@@ -82,9 +79,7 @@ dropdownFilters.forEach(filter => {
   })
 })
 
-
 document.addEventListener("click", function (e) {
-  // Check if the clicked element is inside a .dropdown-filter or .dropdown-filter-list
   if (!e.target.closest('.dropdown-filter') && !e.target.closest('.dropdown-filter-list')) {
     document.querySelectorAll(".dropdown-filter-list").forEach(list => {
       list.style.display = "none";
