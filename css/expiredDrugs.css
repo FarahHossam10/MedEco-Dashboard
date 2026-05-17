@@ -1,9 +1,17 @@
-.body-container .data-table-container {
-    margin: 30px 30px 30px 30px;
-    max-height: max-content;
+.body-container {
+    flex: 1;
+    min-width: 0;
     width: 100%;
+    overflow-x: hidden;
+}
+
+.body-container .data-table-container {
+    margin: 30px;
+    max-height: max-content;
+    width: calc(100% - 60px);
     border-radius: 15px;
     border: 1px solid #D5D5D5;
+    overflow-x: auto;
 }
 
 .body-container .data-table-container .table {
@@ -15,6 +23,7 @@
     padding: 50px 30px;
     font-size: 14px;
     color: #202224;
+    white-space: nowrap;
 }
 
 .body-container .data-table-container .table td {
@@ -47,4 +56,11 @@
 .rejected {
     background-color: #fcd7d4;
     color: #EF3826;
+}
+
+@media (max-width: 900px) {
+    .body-container .data-table-container .table th,
+    .body-container .data-table-container .table td {
+        padding: 20px 15px;
+    }
 }

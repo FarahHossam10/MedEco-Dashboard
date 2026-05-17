@@ -6,8 +6,8 @@
     border: 1px solid #D5D5D5;
     cursor: pointer;
     font-size: 14px;
-    overflow: visible;
-    min-width: max-content;
+    overflow-x: auto;
+    width: calc(100% - 60px);
     max-height: max-content;
     position: relative;
 }
@@ -85,3 +85,4 @@
     background-color: #e9e8e8;
     width: 250px;
 }
+

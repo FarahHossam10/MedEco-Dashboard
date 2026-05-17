@@ -121,6 +121,6 @@ body {
         flex: 1;
         width: 100%;
         min-width: 0;
-        overflow-x: hidden;
+        /* overflow-x: hidden; */
     }
 }
