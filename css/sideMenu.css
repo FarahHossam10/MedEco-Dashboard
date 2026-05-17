@@ -112,7 +112,7 @@ body {
         min-height: 100% !important;
     }
     .sideMenu-container.open {
-        min-width: max-content !important;
+        min-width: 250px !important;
         max-width: max-content !important;
         overflow: visible;
     }
