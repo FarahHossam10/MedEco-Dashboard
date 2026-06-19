@@ -9,4 +9,5 @@ Bootstrap
 JavaScript
 Chart.js
 
+you can use these to login => username: user@gmail.com password: 12345
 Check it out here => https://farahhossam10.github.io/MedEco-Dashboard/
